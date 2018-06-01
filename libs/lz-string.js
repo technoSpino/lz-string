@@ -495,7 +495,7 @@ var LZString = {
 })();
 
 if (typeof define === 'function' && define.amd) {
-  define(function () { return LZString; });
+  define(function () { "LZString", return LZString; });
 } else if( typeof module !== 'undefined' && module != null ) {
   module.exports = LZString
 } else if( typeof angular !== 'undefined' && angular != null ) {
